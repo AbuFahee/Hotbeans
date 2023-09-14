@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Language selector styles */
+        #language-selector {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Language Selector Dropdown -->
+        <div id="language-selector">
+            <label for="language">Select Language:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <!-- Add more language options as needed -->
+            </select>
+        </div>
+
+    <script>
+        // JavaScript function to change the language
+        function changeLanguage() {
+            const languageSelect = document.getElementById('language');
+            const selectedLanguage = languageSelect.value;
+
+            // Implement logic to change the website's language based on the selected option
+            // For this example, we'll just display an alert message.
+            alert(`Language changed to ${selectedLanguage}`);
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dropdown Navigation</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #007BFF;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #007BFF;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        li:hover .dropdown {
+            display: block;
+        }
+
+        /* Colorful links */
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotBeans Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Style for icons */
+        .fa {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to HotBeans</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home1.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="team.html"><i class="fas fa-info-circle"></i> Our Team</a></li>
+            <li><a href="web.html"><i class="fas fa-cogs"></i> Web Courses</a></li>
+            <li><a href="jobs.html"><i class="fas fa-envelope"></i> Jobs</a></li>
+            <li><a href="form.html"><i class="fas fa-blog"></i> Application Form</a></li>
+        </ul>
+    </nav>
+    <!-- Page content goes here -->
+</body>
+</html>
+
+	
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Homepage</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tile {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .tile img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="tile">
+            <img src="gg.png" alt="Tile 1">
+            <h2>Our Values</h2>
+            <p> We embrace innovation as the driving force behind our solutions. We constantly seek new ideas and technologies to stay at the forefront of the IT industry.
+ We are also committed to delivering high-quality products and services. Quality is non-negotiable, and we take pride in exceeding our clients' expectations.We believe in the power of teamwork. Collaboration among our employees, clients, and partners is essential to achieving our goals.
+  We celebrate diversity and foster an inclusive workplace where every individual feels valued and respected.</p>
+        </div>
+        <div class="tile">
+            <img src="pp.png" alt="Tile 2">
+            <h2>Our Aims</h2>
+            <p>Our primary aim is to provide innovative IT solutions that address the evolving needs of our clients. We strive to stay at the forefront of technology trends and offer cutting-edge solutions.
+			We aim to achieve and maintain high levels of client satisfaction. This includes delivering projects on time, within budget, and exceeding our clients' expectations in terms of quality and functionality
+			We are committed to the growth and development of our employees. Our aim is to create a nurturing and inspiring work environment where our team members can thrive, learn, and contribute their best to the company's success.</p>
+        </div>
+        <div class="tile">
+            <img src="mm.png" alt="Tile 3">
+            <h2>Decription Of HotBeans</h2>
+            <p> HotBeans excels in creating visually appealing and highly functional websites and web applications. They design and develop user-friendly, responsive websites that not only look good but also deliver an exceptional user experience
+			The company offers custom software development services, building tailored applications and solutions to meet specific business needs. This can include anything from mobile apps to complex enterprise-level software
+			The company offers digital marketing services, including SEO (Search Engine Optimization), SEM (Search Engine Marketing), social media marketing, content marketing, and email marketing. These services help businesses increase their online visibility and reach their target audience</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotBeans Language Selector</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Language selector styles */
+        #language-selector {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotBeans Chatbot</title>
+    <style>
+        /* Basic CSS for styling the chatbot container */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .chatbot-container {
+            width: 300px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chatbot-header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .chatbot-body {
+            padding: 10px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .chatbot-input {
+            border-top: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .chatbot-input input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h2>HotBeans Chatbot</h2>
+        </div>
+        <div class="chatbot-body">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your message...">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for handling chatbot interactions
+        const chatbotBody = document.querySelector('.chatbot-body');
+        const inputField = document.querySelector('.chatbot-input input[type="text"]');
+
+        inputField.addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                const userMessage = inputField.value.trim();
+                if (userMessage !== '') {
+                    appendMessage('You', userMessage);
+                    // You can implement logic to process the user's message here
+                    inputField.value = '';
+                }
+            }
+        });
+
+        function appendMessage(sender, message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message';
+            messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatbotBody.appendChild(messageDiv);
+            chatbotBody.scrollTop = chatbotBody.scrollHeight; // Scroll to the bottom of the chat
+        }
+
+        // Initial greeting message from the chatbot
+        setTimeout(function () {
+            appendMessage('HotBeans Chatbot', 'Hello! How can I assist you today?');
+        }, 500);
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotBeans Website</title>
+    <style>
+        /* Basic CSS for styling the popup */
+        #cookie-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #cookie-popup p {
+            margin: 0;
+        }
+
+        #cookie-popup button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your website content goes here -->
+
+    <!-- Cookie consent popup -->
+    <div id="cookie-popup">
+        <p>We use cookies to enhance your experience on our website. By continuing to use this site, you agree to our use of cookies.</p>
+        <button id="accept-cookies">Accept</button>
+    </div>
+
+    <script>
+        // JavaScript for showing/hiding the cookie consent popup
+        const cookiePopup = document.getElementById('cookie-popup');
+        const acceptCookiesButton = document.getElementById('accept-cookies');
+
+        // Check if the user has previously accepted cookies
+        const hasAcceptedCookies = localStorage.getItem('cookiesAccepted');
+
+        // If cookies have not been accepted, show the popup
+        if (!hasAcceptedCookies) {
+            cookiePopup.style.display = 'block';
+        }
+
+        // Handle the "Accept" button click
+        acceptCookiesButton.addEventListener('click', () => {
+            // Set a flag in local storage to remember that cookies have been accepted
+            localStorage.setItem('cookiesAccepted', 'true');
+            // Hide the popup
+            cookiePopup.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
